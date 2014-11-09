@@ -6,6 +6,6 @@ if [ -z "$EDGE" ]; then
 else
   apt-get install -qy git
   rm -rf /opt/couchpotato
-  git clone https://github.com/RuudBurger/CouchPotatoServer.git /opt/couchpotato
+  git clone https://github.com/rubberbird/CouchPotatoServer.git /opt/couchpotato
   chown -R nobody:users /opt/couchpotato
 fi
