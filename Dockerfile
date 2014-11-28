@@ -17,7 +17,7 @@ RUN add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ trusty-updates 
 RUN apt-get update -q
 
 # Install Dependencies
-RUN apt-get install -qy python wget unrar
+RUN apt-get install -qy python wget unrar python-lxml
 
 # Install CouchPotato v2.6.1 Torrentleech version
 RUN mkdir /opt/couchpotato
