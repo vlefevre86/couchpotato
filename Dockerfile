@@ -19,9 +19,9 @@ RUN apt-get update -q
 # Install Dependencies
 RUN apt-get install -qy python wget unrar python-lxml
 
-# Install CouchPotato v2.6.1 Torrentleech version
+# Install CouchPotato v2.6.1
 RUN mkdir /opt/couchpotato
-RUN wget -P /tmp/ https://github.com/piotrasd/CouchPotatoServer/archive/2.6.1.tar.gz
+RUN wget -P /tmp/ https://github.com/RuudBurger/CouchPotatoServer/archive/build/2.6.1.zip
 RUN tar -C /opt/couchpotato -xvf /tmp/2.6.1.tar.gz --strip-components 1
 RUN chown nobody:users /opt/couchpotato
 
